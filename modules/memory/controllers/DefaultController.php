@@ -2,10 +2,12 @@
 
 namespace app\modules\memory\controllers;
 
-use yii\web\Controller;
+use app\controllers\BaseController;
+use Yii;
 
-class DefaultController extends Controller
+class DefaultController extends BaseController
 {
+
     public function actionIndex() {
         return $this->render('index');
     }

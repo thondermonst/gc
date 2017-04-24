@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Url;
+use app\modules\memory\assets\MemoryAsset;
 
 $this->title = 'Memory'
 ?>
@@ -18,3 +19,6 @@ $this->title = 'Memory'
         </div>
     </div>
 </div>
+<?php
+MemoryAsset::register($this);
+?>
